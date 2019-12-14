@@ -42,3 +42,4 @@ names = ["bad", "okay", "good", "very_good"]
 
 for x in range(len(predictedVal)):
     print("Predicted: ", names[predictedVal[x]], " | Data: ", x_test[x], " | Actual: ", names[y_test[x]], sep="")
+    neighbDistance = kValue.kneighbors([x_test[x]], 9, True)
